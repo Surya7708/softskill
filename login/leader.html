@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Skills Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .quiz-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            margin: 15px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Leadership Skills Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the primary role of a leader?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A"> A) To give orders</label><br>
+                    <label><input type="radio" name="q1" value="B"> B) To inspire and guide others</label><br>
+                    <label><input type="radio" name="q1" value="C"> C) To control every aspect of a team</label><br>
+                    <label><input type="radio" name="q1" value="D"> D) To avoid responsibility</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. Which leadership style encourages team input and participation?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A"> A) Autocratic</label><br>
+                    <label><input type="radio" name="q2" value="B"> B) Laissez-faire</label><br>
+                    <label><input type="radio" name="q2" value="C"> C) Democratic</label><br>
+                    <label><input type="radio" name="q2" value="D"> D) Transactional</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. What is a key characteristic of effective leaders?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A"> A) Rigidity</label><br>
+                    <label><input type="radio" name="q3" value="B"> B) Inflexibility</label><br>
+                    <label><input type="radio" name="q3" value="C"> C) Adaptability</label><br>
+                    <label><input type="radio" name="q3" value="D"> D) Indifference</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. How can a leader foster a positive team culture?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A"> A) Ignoring conflicts</label><br>
+                    <label><input type="radio" name="q4" value="B"> B) Encouraging open communication and recognition</label><br>
+                    <label><input type="radio" name="q4" value="C"> C) Criticizing team members regularly</label><br>
+                    <label><input type="radio" name="q4" value="D"> D) Focusing only on results</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. What is the significance of vision in leadership?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A"> A) It is unimportant</label><br>
+                    <label><input type="radio" name="q5" value="B"> B) It provides direction and inspires the team</label><br>
+                    <label><input type="radio" name="q5" value="C"> C) It complicates the decision-making process</label><br>
+                    <label><input type="radio" name="q5" value="D"> D) It restricts creativity</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>6. How can leaders effectively delegate tasks?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="A"> A) By micromanaging every detail</label><br>
+                    <label><input type="radio" name="q6" value="B"> B) By assigning tasks based on team members' strengths</label><br>
+                    <label><input type="radio" name="q6" value="C"> C) By doing everything themselves</label><br>
+                    <label><input type="radio" name="q6" value="D"> D) By ignoring team members' capabilities</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>7. What role does feedback play in leadership?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="A"> A) It is unnecessary</label><br>
+                    <label><input type="radio" name="q7" value="B"> B) It helps team members grow and improve</label><br>
+                    <label><input type="radio" name="q7" value="C"> C) It creates conflict</label><br>
+                    <label><input type="radio" name="q7" value="D"> D) It should only be positive</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. How should a leader handle failure within the team?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="A"> A) Blame team members</label><br>
+                    <label><input type="radio" name="q8" value="B"> B) Analyze the situation and learn from it</label><br>
+                    <label><input type="radio" name="q8" value="C"> C) Ignore it and move on</label><br>
+                    <label><input type="radio" name="q8" value="D"> D) Avoid discussing it</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. What is transformational leadership?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="A"> A) Focusing solely on tasks</label><br>
+                    <label><input type="radio" name="q9" value="B"> B) Inspiring and motivating team members to exceed expectations</label><br>
+                    <label><input type="radio" name="q9" value="C"> C) Maintaining strict control over the team</label><br>
+                    <label><input type="radio" name="q9" value="D"> D) Following established protocols without question</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. Which of the following is an effective way to resolve team conflicts?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="A"> A) Ignoring the conflict</label><br>
+                    <label><input type="radio" name="q10" value="B"> B) Encouraging open discussion and collaboration</label><br>
+                    <label><input type="radio" name="q10" value="C"> C) Taking sides</label><br>
+                    <label><input type="radio" name="q10" value="D"> D) Avoiding the topic</label>
+                </div>
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            const answers = {
+                q1: 'B',
+                q2: 'C',
+                q3: 'B',
+                q4: 'C',
+                q5: 'B',
+                q6: 'B',
+                q7: 'B',
+                q8: 'B',
+                q9: 'C',
+                q10: 'B',
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `You scored ${score} out of ${totalQuestions}.`;
+        }
+    </script>
+</body>
+</html>

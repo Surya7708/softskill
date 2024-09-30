@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpersonal Skills Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .quiz-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            margin: 15px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interpersonal Skills Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the main goal of building rapport?</p>
+                <label><input type="radio" name="q1" value="A"> A) To manipulate others</label><br>
+                <label><input type="radio" name="q1" value="B"> B) To create a trusting relationship</label><br>
+                <label><input type="radio" name="q1" value="C"> C) To avoid confrontation</label><br>
+                <label><input type="radio" name="q1" value="D"> D) To maintain distance</label>
+            </div>
+            <div class="question">
+                <p>2. Which of the following is a sign of effective teamwork?</p>
+                <label><input type="radio" name="q2" value="A"> A) Constant conflict</label><br>
+                <label><input type="radio" name="q2" value="B"> B) Open communication and collaboration</label><br>
+                <label><input type="radio" name="q2" value="C"> C) Individual goals overshadowing team goals</label><br>
+                <label><input type="radio" name="q2" value="D"> D) Lack of participation</label>
+            </div>
+            <div class="question">
+                <p>3. How can you demonstrate respect for others in a conversation?</p>
+                <label><input type="radio" name="q3" value="A"> A) Interrupting frequently</label><br>
+                <label><input type="radio" name="q3" value="B"> B) Listening without judgment</label><br>
+                <label><input type="radio" name="q3" value="C"> C) Ignoring their opinions</label><br>
+                <label><input type="radio" name="q3" value="D"> D) Talking over them</label>
+            </div>
+            <div class="question">
+                <p>4. What is a common characteristic of emotionally intelligent individuals?</p>
+                <label><input type="radio" name="q4" value="A"> A) They avoid conflicts at all costs</label><br>
+                <label><input type="radio" name="q4" value="B"> B) They are self-aware and can regulate their emotions</label><br>
+                <label><input type="radio" name="q4" value="C"> C) They focus only on their own feelings</label><br>
+                <label><input type="radio" name="q4" value="D"> D) They are always in control of their emotions</label>
+            </div>
+            <div class="question">
+                <p>5. What does "constructive feedback" entail?</p>
+                <label><input type="radio" name="q5" value="A"> A) Criticism without guidance</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Providing suggestions for improvement</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Only pointing out mistakes</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Ignoring issues</label>
+            </div>
+            <div class="question">
+                <p>6. How should you react when someone is upset or angry?</p>
+                <label><input type="radio" name="q6" value="A"> A) Dismiss their feelings</label><br>
+                <label><input type="radio" name="q6" value="B"> B) Listen actively and validate their feelings</label><br>
+                <label><input type="radio" name="q6" value="C"> C) Argue with them</label><br>
+                <label><input type="radio" name="q6" value="D"> D) Change the subject quickly</label>
+            </div>
+            <div class="question">
+                <p>7. Which of the following is a method to resolve conflicts effectively?</p>
+                <label><input type="radio" name="q7" value="A"> A) Avoiding the issue</label><br>
+                <label><input type="radio" name="q7" value="B"> B) Compromise and find a mutually acceptable solution</label><br>
+                <label><input type="radio" name="q7" value="C"> C) Dominating the conversation</label><br>
+                <label><input type="radio" name="q7" value="D"> D) Blaming the other person</label>
+            </div>
+            <div class="question">
+                <p>8. What does "empathy" mean in interpersonal relationships?</p>
+                <label><input type="radio" name="q8" value="A"> A) Sympathy for someone’s situation</label><br>
+                <label><input type="radio" name="q8" value="B"> B) Understanding and sharing someone’s feelings</label><br>
+                <label><input type="radio" name="q8" value="C"> C) Ignoring others' feelings</label><br>
+                <label><input type="radio" name="q8" value="D"> D) Only caring about your own emotions</label>
+            </div>
+            <div class="question">
+                <p>9. How can you improve your interpersonal skills?</p>
+                <label><input type="radio" name="q9" value="A"> A) Avoid social interactions</label><br>
+                <label><input type="radio" name="q9" value="B"> B) Practice active listening and engage in conversations</label><br>
+                <label><input type="radio" name="q9" value="C"> C) Focus solely on your own interests</label><br>
+                <label><input type="radio" name="q9" value="D"> D) Only interact with people you know well</label>
+            </div>
+            <div class="question">
+                <p>10. What is the impact of cultural differences on interpersonal communication?</p>
+                <label><input type="radio" name="q10" value="A"> A) There is no impact</label><br>
+                <label><input type="radio" name="q10" value="B"> B) They can lead to misunderstandings</label><br>
+                <label><input type="radio" name="q10" value="C"> C) They make communication easier</label><br>
+                <label><input type="radio" name="q10" value="D"> D) They only affect written communication</label>
+            </div>
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            const answers = {
+                q1: 'B',
+                q2: 'B',
+                q3: 'B',
+                q4: 'B',
+                q5: 'B',
+                q6: 'B',
+                q7: 'B',
+                q8: 'B',
+                q9: 'B',
+                q10: 'B',
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `You scored ${score} out of ${totalQuestions}.`;
+        }
+    </script>
+</body>
+</html>

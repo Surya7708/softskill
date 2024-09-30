@@ -1,0 +1,54 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your topic for quiz assessment</title>
+    <style>
+        body {
+            font-family: Century Gothic, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .option {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select your topic for quiz assessment</h1>
+        <div class="options">
+            <div class="option" onclick="location.href='comm.html'">Communication</div>
+            <div class="option" onclick="location.href='inter.html'">Interpersonal</div>
+            <div class="option" onclick="location.href='emotion.html'">Emotional Intelligence</div>
+            <div class="option" onclick="location.href='Adaptable.html'">Adaptability and Flexibility</div>
+            <div class="option" onclick="location.href='problem.html'">Problem Solving</div>
+            <div class="option" onclick="location.href='leader.html'">Leadership</div>
+        </div>
+    </div>
+</body>
+</html>
